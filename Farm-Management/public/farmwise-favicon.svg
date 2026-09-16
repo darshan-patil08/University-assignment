@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1f8f2f"/>
+      <stop offset="1" stop-color="#064f2a"/>
+    </linearGradient>
+    <linearGradient id="sun" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffd84a"/>
+      <stop offset="1" stop-color="#f6a900"/>
+    </linearGradient>
+    <linearGradient id="field" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#75d61b"/>
+      <stop offset="1" stop-color="#08752e"/>
+    </linearGradient>
+    <clipPath id="round">
+      <rect x="8" y="8" width="240" height="240" rx="48"/>
+    </clipPath>
+  </defs>
+
+  <rect x="8" y="8" width="240" height="240" rx="48" fill="url(#bg)"/>
+
+  <g clip-path="url(#round)">
+    <!-- sky -->
+    <rect x="8" y="8" width="240" height="148" fill="#f7fff7"/>
+    <circle cx="128" cy="104" r="43" fill="url(#sun)"/>
+
+    <!-- hills -->
+    <path d="M8 139 Q58 91 111 126 Q151 96 198 126 Q226 107 248 122 V174 H8Z"
+          fill="#9bd07b"/>
+    <path d="M8 153 Q61 117 112 143 Q163 113 248 143 V180 H8Z"
+          fill="#4d9d4d"/>
+
+    <!-- distant trees -->
+    <g fill="#146b35">
+      <circle cx="62" cy="146" r="20"/>
+      <circle cx="84" cy="141" r="24"/>
+      <circle cx="105" cy="148" r="18"/>
+    </g>
+
+    <!-- farmhouse -->
+    <path d="M143 137 L168 115 L207 137 V170 H143Z" fill="#fff4d7" stroke="#4b321f" stroke-width="4"/>
+    <path d="M138 137 L168 110 L213 137 Z" fill="#b96825" stroke="#4b321f" stroke-width="4"/>
+    <rect x="164" y="143" width="13" height="27" fill="#4b321f"/>
+    <rect x="190" y="145" width="11" height="10" fill="#39704a"/>
+
+    <!-- tree -->
+    <rect x="217" y="137" width="6" height="34" fill="#5b3b24"/>
+    <circle cx="220" cy="126" r="22" fill="#39a33b"/>
+    <circle cx="207" cy="134" r="14" fill="#278b38"/>
+    <circle cx="233" cy="135" r="15" fill="#2e9637"/>
+
+    <!-- fence -->
+    <g stroke="#69462b" stroke-width="5" fill="none">
+      <path d="M202 151 H248"/>
+      <path d="M202 162 H248"/>
+      <path d="M208 143 V171"/>
+      <path d="M229 143 V171"/>
+    </g>
+
+    <!-- fields -->
+    <path d="M8 158 Q112 142 248 158 V256 H8Z" fill="url(#field)"/>
+    <path d="M15 166 Q84 158 124 163 Q76 194 57 256 H30 Q52 201 15 166Z" fill="#0b612f"/>
+    <path d="M65 160 Q117 157 149 164 Q120 197 111 256 H79 Q100 195 65 160Z" fill="#a1df22"/>
+    <path d="M111 160 Q151 159 177 165 Q160 202 162 256 H130 Q141 202 111 160Z" fill="#075b2d"/>
+    <path d="M157 161 Q198 162 227 168 Q216 204 222 256 H181 Q185 203 157 161Z" fill="#8bd71b"/>
+    <path d="M202 164 Q230 166 248 172 V256 H224 Q229 205 202 164Z" fill="#07572c"/>
+
+    <!-- foreground leaves -->
+    <path d="M76 228 C38 215 23 177 31 145 C65 157 83 187 76 228Z"
+          fill="#4ebc1d" stroke="#f7fff7" stroke-width="5"/>
+    <path d="M78 235 C73 199 91 169 123 157 C125 194 109 222 78 235Z"
+          fill="#70d51e" stroke="#f7fff7" stroke-width="5"/>
+    <path d="M50 174 Q72 194 82 216" fill="none" stroke="#f7fff7" stroke-width="4"/>
+    <path d="M110 177 Q91 198 80 225" fill="none" stroke="#f7fff7" stroke-width="4"/>
+
+    <!-- birds -->
+    <path d="M185 72 q9 -10 18 0 q-9 -4 -18 0Z" fill="#146b35"/>
+    <path d="M207 83 q8 -9 16 0 q-8 -4 -16 0Z" fill="#146b35"/>
+
+    <!-- emblem arc -->
+    <path d="M40 103 A90 90 0 0 1 216 103" fill="none" stroke="#0d6635" stroke-width="9" stroke-linecap="round"/>
+  </g>
+
+  <rect x="8" y="8" width="240" height="240" rx="48" fill="none" stroke="#ffffff" stroke-width="5"/>
+</svg>
