@@ -17,7 +17,7 @@ const existingContacts = [
 //creating a new contact list
 
 const newlyAddedContacts = [
-    createContact("Mohit Sharma", "mohit.sharma@gmail.com")]
+    createContact("Mohit Sharma", "mohit.sharma@gmail.com",9054156789),]
 
 //merging the contact lists using spread operator
     const contacts = [...existingContacts, ...newlyAddedContacts];

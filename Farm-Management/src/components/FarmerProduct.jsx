@@ -1,5 +1,6 @@
 import * as z from "zod";
 import styled from "styled-components";
+import {Leaf, Apple, Wheat } from "lucide-react";
 
 const farmerProductsSchema = z.object({
   productName: z.string(),
@@ -15,34 +16,17 @@ const farmerProductsSchema = z.object({
     })
     .positive({ message: "Quantity must be a positive number" })
     .min(1, "minimum quantity should be 1")
-    .max(10, "maximum quantity should be 10"),
+    .max(10, "maximum quantity should be 10")
 });
 
-const LeafIcon = ({ color }) => (
-  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth="2">
-    <path d="M5 21c9 0 14-5 14-14V5h-2C8 5 5 12 5 21z" />
-    <path d="M5 21c3-4 6-7 9-9" />
-  </svg>
-);
+const VgetableIcon = ({ color }) => <Leaf color={color} />;
+const FruitIcon = ({ color }) => <Apple color={color} />;
+const GrainIcon = ({ color }) => <Wheat color={color} />;
 
-const WheatIcon = ({ color }) => (
-  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth="2">
-    <path d="M12 22V4" />
-    <path d="M12 6l-3-2M12 6l3-2M12 10l-3-2M12 10l3-2M12 14l-3-2M12 14l3-2" />
-  </svg>
-);
-
-const FruitIcon = ({ color }) => (
-  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth="2">
-    <circle cx="12" cy="14" r="7" />
-    <path d="M12 7c0-2 1.5-3 3-3" />
-  </svg>
-);
-
-const TYPE_CONFIG = {
+const TYPE_CONFIG = { 
   fruit: { label: "Fruit", color: "#d51010", Icon: FruitIcon },
-  vegetable: { label: "Vegetable", color: "#48bb21", Icon: LeafIcon },
-  grain: { label: "Grain", color: "#C6981F", Icon: WheatIcon },
+  vegetable: { label: "Vegetable", color: "#48bb21", Icon: VgetableIcon },
+  grain: { label: "Grain", color: "#C6981F", Icon: GrainIcon },
 };
 
 const Card = styled.div`
