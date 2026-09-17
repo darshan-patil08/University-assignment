@@ -120,11 +120,7 @@ const GaugeFill = styled.div`
   width: ${(p) => p.$percent}%;
 `;
 
-const GaugeCaption = styled.p`
-  margin: 6px 0 0;
-  font-size: 12px;
-  color: #8a7a56;
-`;
+
 
 const ErrorCard = styled.div`
   font-family: "Work Sans", sans-serif;
@@ -191,7 +187,7 @@ const FarmProduct = ({ productName, type, quantityAvailable }) => {
             <GaugeTrack>
               <GaugeFill $color={config.color} $percent={percent} />
             </GaugeTrack>
-            <GaugeCaption>{product.quantityAvailable} of 10 kg listed</GaugeCaption>
+          
           </div>
         </Body>
     </Card>

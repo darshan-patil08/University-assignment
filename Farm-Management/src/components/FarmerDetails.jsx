@@ -54,11 +54,7 @@ const Avatar = styled.div`
   justify-content: center;
 `;
 
-const Eyebrow = styled.span`
-  display: block;
-  color: #9fbba6;
-  font-size: 12px;
-`;
+
 
 const Name = styled.h2`
   font-family: "Fraunces", serif;
@@ -152,7 +148,6 @@ const FarmerDetails = ({ farmerName, age, farmLocation }) => {
           <HeaderRow>
             <Avatar>{initials}</Avatar>
             <div>
-              <Eyebrow>Farmer Profile</Eyebrow>
               <Name>{farmer.farmerName}</Name>
             </div>
           </HeaderRow>

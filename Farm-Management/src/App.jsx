@@ -5,7 +5,7 @@ import styled from "styled-components";
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80vh; 
+    height: 74vh; 
     `
 
     const TitleContainer = styled.div`

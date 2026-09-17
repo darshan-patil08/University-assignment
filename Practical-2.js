@@ -3,15 +3,30 @@ console.log("-------------------------------------------");
 
 
 const numbers = [1, 2, 3, 4, 5];
+function double(number) {
+    return number * 2;
+}
+function triple(number) {
+    return number * 3;
+}
 
-const double = (number) => number * 2; 
+function square(number) {
+    return number ** 2;
+}
+
+function cube(number) {
+    return number ** 3;
+}
+
+
+// const double = (number) => number * 2; 
     
-const triple = (number) => number * 3; 
+// const triple = (number) => number * 3; 
     
-const square = (number) => number ** 2; 
+// const square = (number) => number ** 2; 
     
     
-const cube = (number) => number ** 3; 
+// const cube = (number) => number ** 3; 
     
 
 
@@ -24,3 +39,5 @@ console.log(`Doubled Numbers: ${JSON.stringify(processArray(numbers, double))}`)
 console.log(`Tripled Numbers: ${JSON.stringify(processArray(numbers, triple))}`);
 console.log(`Squared Numbers: ${JSON.stringify(processArray(numbers, square))}`);
 console.log(`Cubed Numbers: ${JSON.stringify(processArray(numbers, cube))}`);
+
+
