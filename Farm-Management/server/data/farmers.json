@@ -1,0 +1,80 @@
+{
+  "farmers": [
+    {
+      "farmerId": 1,
+      "name": "Ramesh Patel",
+      "contact": {
+        "phone": "9876543210",
+        "email": "ramesh.patel@example.com"
+      },
+      "farmLocation": "Ahmedabad, Gujarat",
+      "producedCrops": [
+        {
+          "cropId": 101,
+          "cropName": "Wheat",
+          "category": "Grains",
+          "quantity": 1200,
+          "unit": "kg",
+          "pricePerUnit": 25,
+          "harvestSeason": "Winter"
+        },
+        {
+          "cropId": 102,
+          "cropName": "Tomato",
+          "category": "Vegetables",
+          "quantity": 500,
+          "unit": "kg",
+          "pricePerUnit": 40
+        }
+      ]
+    },
+    {
+      "farmerId": 2,
+      "name": "Suresh Mehta",
+      "contact": {
+        "phone": "9988776655",
+        "email": "suresh.mehta@example.com"
+      },
+      "farmLocation": "Nashik, Maharashtra",
+      "producedCrops": [
+        {
+          "cropId": 201,
+          "cropName": "Rice",
+          "category": "Grains",
+          "quantity": 1500,
+          "unit": "kg",
+          "pricePerUnit": 30,
+          "harvestSeason": "Monsoon"
+        },
+        {
+          "cropId": 202,
+          "cropName": "Mango",
+          "category": "Fruits",
+          "quantity": 300,
+          "unit": "dozen",
+          "pricePerUnit": 120
+        }
+      ]
+    },
+    {
+      "farmerId": 3,
+      "name": "Darshan Patil",
+      "contact": {
+        "phone": "9067183370",
+        "email": "darshan.s.patil08@gmail.com"
+      },
+      "farmLocation": "Navsari, surat",
+      "producedCrops": [
+        {
+          "cropId": 301,
+          "cropName": "basmati",
+          "category": "Grains",
+          "quantity": 10000,
+          "unit": "kg",
+          "pricePerUnit": 22,
+          "harvestSeason": "Monsoon"
+        }
+      ]
+    }
+  ]
+}

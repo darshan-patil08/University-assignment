@@ -86,6 +86,9 @@ const NavBar = () => {
           <NavItem to="/">Home</NavItem>
           <NavItem to="/farmers">Farmers</NavItem>
           <NavItem to="/products">Products</NavItem>
+          <NavItem to="/inventory">Inventory</NavItem>
+          <NavItem to="/farmer-portal">Farmer Portal</NavItem>
+          <NavItem to="/apmc-market">APMC Market</NavItem>
         </NavLinks>
       </Nav>
     </>

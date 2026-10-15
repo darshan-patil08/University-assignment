@@ -7,6 +7,9 @@ import styled from "styled-components";
 
 const FarmersPage = lazy(()=>import("../pages/FarmersPage"))
 const ProductsPage = lazy(()=>import("../pages/ProductsPage"))
+const InventoryPage = lazy(()=>import("../pages/InventoryPage"))
+const FarmerPortalPage = lazy(()=>import("../pages/FarmerPortalPage"))
+const APMCMarketPage = lazy(()=>import("../pages/APMCMarketPage"))
 
 const LoadingContainer = styled.div`
   display: flex;
@@ -38,9 +41,33 @@ const MyRouter = createBrowserRouter([
       },
       {
         path: "products",
-       element:(
+        element:(
           <Suspense fallback={<LoadingContainer >Loading...</LoadingContainer>}>
             <ProductsPage />
+          </Suspense>
+        ),
+      },
+      {
+        path: "inventory",
+        element:(
+          <Suspense fallback={<LoadingContainer>Loading...</LoadingContainer>}>
+            <InventoryPage />
+          </Suspense>
+        ),
+      },
+      {
+        path: "farmer-portal",
+        element:(
+          <Suspense fallback={<LoadingContainer>Loading...</LoadingContainer>}>
+            <FarmerPortalPage />
+          </Suspense>
+        ),
+      },
+      {
+        path: "apmc-market",
+        element:(
+          <Suspense fallback={<LoadingContainer>Loading...</LoadingContainer>}>
+            <APMCMarketPage />
           </Suspense>
         ),
       },
